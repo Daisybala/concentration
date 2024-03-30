@@ -13,5 +13,11 @@
   /*----- functions -----*/
   
   init(){
+
+    render();
+  }
+
+  render(){
+
     
   }
