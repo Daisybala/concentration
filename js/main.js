@@ -2,6 +2,7 @@
 
 
   /*----- state variables -----*/
+  let board;
 
 
   /*----- cached elements  -----*/
@@ -19,5 +20,5 @@
 
   render(){
 
-    
+
   }
