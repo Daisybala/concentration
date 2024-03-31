@@ -29,6 +29,16 @@
   function init() {
     cards = getShuffledCards();
     firstCard = null
+    render ();
+
+  }
+
+  function render() {
+    cards.forEach(function(card, idx){
+        const imgEl = document.getElementById(idx);
+        imgEl.src = card.img;
+    })
+
 
   }
 
@@ -46,7 +56,3 @@
     return cards;
   }
 
-  function render() {
-
-
-  }
