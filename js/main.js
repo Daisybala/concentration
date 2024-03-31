@@ -7,7 +7,7 @@
     {img: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Supergirl_%28Kara_Zor-El_circa_2016%29.png/220px-Supergirl_%28Kara_Zor-El_circa_2016%29.png', matched: false},
     {img: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Supergirl_%28Kara_Zor-El_circa_2016%29.png/220px-Supergirl_%28Kara_Zor-El_circa_2016%29.png', matched: false},
     {img: 'https://cdn.shopify.com/s/files/1/2393/5817/files/092418elast_480x480.jpg?v=1677000416', matched: false},
-    {img: 'https://sciencefiction.com/wp-content/uploads/2012/03/Green-Lantern-1024x575-640x359.jpg.webp', matched: false},
+    {img: 'https://sciencefiction.com/wp-content/uploads/2012/03/Green-Lantern-1024x575-640x359.jpg.webp', matched: false}
   ];
   const CARD_BACK = 'https://i.imgur.com/TG9CvcQ.jpeg';
 
@@ -28,8 +28,8 @@
   
   function init() {
     cards = getShuffledCards();
+    firstCard = null
 
-    render();
   }
 
   function getShuffledCards() {
@@ -41,7 +41,9 @@
     while (tempCards.length) {
         let rndIdx = Math.floor(Math.random() * tempCards.length);
         let card = tempCards.splice(rndIdx, 1)[0];
-        cards.push(cards);
+        cards.push(card);
+    }
+    return cards;
   }
 
   function render() {
