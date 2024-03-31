@@ -14,6 +14,7 @@
 
   /*----- state variables -----*/
   let cards;
+  let firstCard;
 
 
   /*----- cached elements  -----*/
@@ -23,13 +24,27 @@
 
 
   /*----- functions -----*/
+  init()
   
-  init() {
+  function init() {
+    cards = getShuffledCards();
 
     render();
   }
 
-  render() {
+  function getShuffledCards() {
+    let tempCards = [];
+    let cards = [];
+    for (let card of SOURCE_CARDS) {
+        tempCards.push(card, card);
+    }
+    while (tempCards.length) {
+        let rndIdx = Math.floor(Math.random() * tempCards.length);
+        let card = tempCards.splice(rndIdx, 1)[0];
+        cards.push(cards);
+  }
+
+  function render() {
 
 
   }
