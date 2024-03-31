@@ -23,15 +23,15 @@
     color: grey;
     font-size: 3vmin;
   }
-  #board {
+  main {
     display: grid;
-    grid-template-columns: repeat(6, 10vmin);
-    grid-template-rows: repeat(6, 10vmin);
+    grid-template-columns: repeat(4, 10vmin);
+    grid-template-rows: repeat(4, 10vmin);
     gap: 1vmin;
     margin-top: -4vmin;
   }
   
-  #board > div {
+  main > img {
     border-radius: 50%;
     border: 0.1vmin solid grey;
   }
