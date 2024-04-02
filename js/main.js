@@ -44,7 +44,7 @@ document.querySelector('main').addEventListener('click' ,handleChoice);
         const src = (card.matched || card === firstCard) ? card.img : CARD_BACK ;
         imgEl.src = src;
     });
-    msgEl.innerHTML = 'Bad Count: ${numBad}';
+    msgEl.innerHTML = `Bad Count: ${numBad}`;
 
 
   }
@@ -78,4 +78,5 @@ function handleChoice(evt){
   } else {
     firstCard = card;
   }
+  render();
 }
