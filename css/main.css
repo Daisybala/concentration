@@ -28,6 +28,11 @@ h2{
   font-size: 2vmin;
   display: block;
 }
+h2{
+  color: grey;
+  font-size: 2vmin;
+  display: block;
+}
 
 main {
   display: grid;

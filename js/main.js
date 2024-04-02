@@ -9,7 +9,7 @@ const SOURCE_CARDS = [
   { img: 'https://cdn.shopify.com/s/files/1/2393/5817/files/092418elast_480x480.jpg?v=1677000416', matched: false },
   { img: 'https://sciencefiction.com/wp-content/uploads/2012/03/Green-Lantern-1024x575-640x359.jpg.webp', matched: false }
 ];
-const CARD_BACK = 'https://i.imgur.com/TG9CvcQ.jpeg';
+const CARD_BACK = 'https://cdn.sci.news/images/enlarge11/image_12096e-Dark-Star.jpg';
 
 
 /*----- state variables -----*/
@@ -18,10 +18,12 @@ let firstCard;
 let secondCard;
 let numBad;
 let ignoreClicks;
+let winner;
 
 
 /*----- cached elements  -----*/
 const msgEl = document.querySelector('h2');
+const winEl = document.getElementById('win');
 
 
 /*----- event listeners -----*/
@@ -35,6 +37,7 @@ function init() {
   firstCard = null;
   numBad = 0;
   ignoreClicks = false;
+  winner = false;
   render();
 
 }
@@ -47,6 +50,9 @@ function render() {
     imgEl.src = src;
   });
   msgEl.innerHTML = `Bad Count: ${numBad}`;
+  if (winner) {
+    winEl.innerHTML = 'win';
+  }
 }
 
 function getShuffledCards() {
@@ -75,6 +81,9 @@ function handleChoice(evt) {
         firstCard.matched = secondCard.matched = true;
         firstCard = null;
         secondCard = null;
+        // One way to check for a winner:
+        winner = cards.every(card => card.matched);
+        render();
       } else {
         // ignoreClick = true;
         numBad++;
@@ -87,11 +96,7 @@ function handleChoice(evt) {
           render();
         }, 1000);
       }
-      
-
     }
-
-
   } else {
     firstCard = card;
   }
