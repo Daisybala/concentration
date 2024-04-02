@@ -24,7 +24,7 @@
 
 
   /*----- event listeners -----*/
-document.querySelector('main').addEventListener('click' ,handleChoice);
+  document.querySelector('main').addEventListener('click' ,handleChoice);
 
   /*----- functions -----*/
   init()
@@ -63,20 +63,19 @@ document.querySelector('main').addEventListener('click' ,handleChoice);
     return cards;
   }
 
-function handleChoice(evt){
-  const cardIdx = parseInt(evt.target.id);
-  if (isNaN(cardIdx) || ignoreClicks) return;
-  const card = cards[cardIdx];
-  if (firstCard) {
-    if (card.img === firstCard.imag){
-      card.matched = firstCard.matched = true;
-    }else {
-      numBad++;
-
+  function handleChoice(evt){
+    const cardIdx = parseInt(evt.target.id);
+    if (isNaN(cardIdx) || ignoreClicks) return;
+    const card = cards[cardIdx];
+    if (firstCard) {
+      if (firstCard.img === card.img){
+        firstCard.matched = card.matched = true;
+      }else {
+        numBad++;
+      }
+    firstCard = null;
+    } else {
+      firstCard = card;
     }
-  firstCard = null;
-  } else {
-    firstCard = card;
+    render ();
   }
-  render();
-}
