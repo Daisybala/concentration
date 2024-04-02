@@ -36,7 +36,8 @@
   function render() {
     cards.forEach(function(card, idx){
         const imgEl = document.getElementById(idx);
-        imgEl.src = card.img;
+        const src = (card.matched || card === firstCard) ? card.img : CARD_BACK ;
+        imgEl.src = src;
     })
 
 
@@ -46,7 +47,7 @@
     let tempCards = [];
     let cards = [];
     for (let card of SOURCE_CARDS) {
-        tempCards.push(card, card);
+        tempCards.push({...card}, {...card});
     }
     while (tempCards.length) {
         let rndIdx = Math.floor(Math.random() * tempCards.length);
