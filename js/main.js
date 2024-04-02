@@ -15,20 +15,25 @@
   /*----- state variables -----*/
   let cards;
   let firstCard;
+  let numBad;
+  let ignoreClicks;
 
 
   /*----- cached elements  -----*/
+  const msgEl = document.querySelector('h2');
 
 
   /*----- event listeners -----*/
-
+document.querySelector('main').addEventListener('click' ,handleChoice);
 
   /*----- functions -----*/
   init()
   
   function init() {
     cards = getShuffledCards();
-    firstCard = null
+    firstCard = null;
+    numBad = 0;
+    ignoreClicks = false;
     render ();
 
   }
@@ -38,7 +43,8 @@
         const imgEl = document.getElementById(idx);
         const src = (card.matched || card === firstCard) ? card.img : CARD_BACK ;
         imgEl.src = src;
-    })
+    });
+    msgEl.innerHTML = 'Bad Count: ${numBad}';
 
 
   }
@@ -57,3 +63,19 @@
     return cards;
   }
 
+function handleChoice(evt){
+  const cardIdx = parseInt(evt.target.id);
+  if (isNaN(cardIdx) || ignoreClicks) return;
+  const card = cards[cardIdx];
+  if (firstCard) {
+    if (card.img === firstCard.imag){
+      card.matched = firstCard.matched = true;
+    }else {
+      numBad++;
+
+    }
+  firstCard = null;
+  } else {
+    firstCard = card;
+  }
+}
