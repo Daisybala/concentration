@@ -85,12 +85,12 @@ function handleChoice(evt) {
         winner = cards.every(card => card.matched);
         render();
       } else {
-        // ignoreClick = true;
+        ignoreClicks = true;
         numBad++;
-        // card.matched = true;
+        secondCard.matched = true;
         setTimeout(() => {
-          // ignoreClick = false;
-          // card.matched = false;
+          ignoreClicks = false;
+          secondCard.matched = false;
           firstCard = null;
           secondCard = null;
           render();
