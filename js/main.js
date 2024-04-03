@@ -29,7 +29,7 @@ const buttonEl = document.getElementById('play-again');
 
 /*----- event listeners -----*/
 document.querySelector('main').addEventListener('click', handleChoice);
-buttonEl.addEventListener('click', init());
+buttonEl.addEventListener('click', init);
 
 /*----- functions -----*/
 init()
