@@ -1,11 +1,11 @@
 /*----- constants -----*/
 const SOURCE_CARDS = [
-  { img: 'https://www.nicepng.com/png/full/904-9048612_super-girl-clipart-marvel-super-hero-dc-super.png', matched: false },
+  { img: 'https://maidofmight.net/wordpress/wp-content/uploads/Super-Hero-High-Trailer.jpg', matched: false },
   { img: 'https://s26162.pcdn.co/wp-content/uploads/2023/02/superman-1240x692.jpeg', matched: false },
   { img: 'https://i0.wp.com/batman-news.com/wp-content/uploads/2022/11/The-Adventures-of-Batman-Blu-ray-Featured-01.jpg?resize=696%2C392&quality=80&strip=info&ssl=1', matched: false },
-  { img: 'https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png', matched: false },
-  { img: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Supergirl_%28Kara_Zor-El_circa_2016%29.png/220px-Supergirl_%28Kara_Zor-El_circa_2016%29.png', matched: false },
-  { img: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Supergirl_%28Kara_Zor-El_circa_2016%29.png/220px-Supergirl_%28Kara_Zor-El_circa_2016%29.png', matched: false },
+  { img: 'https://i.pinimg.com/originals/00/19/b9/0019b9f475b2038af2b87e218cd4c653.png', matched: false },
+  { img: 'https://www.nicepng.com/png/full/904-9048612_super-girl-clipart-marvel-super-hero-dc-super.png', matched: false },
+  { img: 'https://static.dc.com/dc/files/default_images/INKSPOTS_Marquee_MeraCharacter_5cb94e4f55b653.14590166.jpg?w=1200', matched: false },
   { img: 'https://cdn.shopify.com/s/files/1/2393/5817/files/092418elast_480x480.jpg?v=1677000416', matched: false },
   { img: 'https://sciencefiction.com/wp-content/uploads/2012/03/Green-Lantern-1024x575-640x359.jpg.webp', matched: false }
 ];

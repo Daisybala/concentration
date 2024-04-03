@@ -17,14 +17,14 @@ body {
   align-items: center;
 }
 h1 {
-  margin-top: 5vmin;
+  margin: 0;
   color: rgb(183, 140, 20);
   font-size: 5vmin;
 }
 h2{
   color: rgb(183, 140, 20);
   font-size: 2vmin;
-  margin: 0;
+  margin: 2vmin;
 }
 h3{
   color: rgb(183, 140, 20);
@@ -34,17 +34,17 @@ h3{
 
 main {
   display: grid;
-  grid-template-columns: repeat(4, 20vmin);
-  grid-template-rows: repeat(4, 20vmin);
-  gap: 0.1vmin;
+  grid-template-columns: repeat(4, 18vmin);
+  grid-template-rows: repeat(4, 18vmin);
+  gap: 0.6vmin;
   /* margin-top: 1vmin; */
 }
 
 main>img {
   border: 0.1vmin solid grey;
-  max-width: 100%;
+  width: 18vmin;
   /* Ensure images don't exceed cell width */
-  max-height: 100%;
+  height: 18vmin;
   /* Ensure images don't exceed cell height */
   display: block;
   /* Allows margin auto to center the image */
@@ -57,15 +57,17 @@ main>img:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
   opacity: 0.9;
-  cursor: url('/Users/honey/code/project1_memorygame/prepare/cursor1.png'),auto;
-}
+  /* cursor: url(../prepare/cursor1.png), auto; */
+  cursor: pointer;
+} 
 button {
-  margin-top: 0vmin;
-  /* padding: 2vmin; */
+  margin-top: 1.5vmin;
+  padding: 1vmin;
   font-size: 2vmin;
   border-radius: 4vmin;
   border: 0.1vmin solid grey;
   color: grey;
+  background: radial-gradient(#009688, #03A9F4);
 }
 
 button:hover {
