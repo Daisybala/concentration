@@ -3,7 +3,11 @@
 }
 
 body {
-  /* viewport units: vh (viewport height), vw, vmin (smallest between vh & vw) */
+  /* viewport units: vh (viewport height), vw, vmin (smallest between vh & vw)
+ */
+  background-image: url('https://cdn.mos.cms.futurecdn.net/rwow8CCG3C3GrqHGiK8qcJ-970-80.jpg.webp');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -12,38 +16,31 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-header {
-  font-size: 4vmin;
-  color: darkgrey;
-  letter-spacing: 1vmin;
-}
-
 h1 {
+  margin-top: 5vmin;
   color: grey;
   font-size: 5vmin;
 }
 h2{
   color: grey;
   font-size: 2vmin;
-  display: block;
+  margin: 0;
 }
-h2{
+h3{
   color: grey;
   font-size: 2vmin;
-  display: block;
+  margin: 0;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(4, 10vmin);
-  grid-template-rows: repeat(4, 10vmin);
-  gap: 1vmin;
-  margin-top: 4vmin;
+  grid-template-columns: repeat(4, 20vmin);
+  grid-template-rows: repeat(4, 20vmin);
+  gap: 0.1vmin;
+  /* margin-top: 1vmin; */
 }
 
 main>img {
-  border-radius: 0%;
   border: 0.1vmin solid grey;
   max-width: 100%;
   /* Ensure images don't exceed cell width */
@@ -58,8 +55,8 @@ main>img {
 }
 
 button {
-  margin-top: 4vmin;
-  padding: 2vmin;
+  margin-top: 0vmin;
+  /* padding: 2vmin; */
   font-size: 2vmin;
   border-radius: 4vmin;
   border: 0.1vmin solid grey;
