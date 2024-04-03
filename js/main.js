@@ -57,6 +57,11 @@ function render() {
     winEl.innerHTML = 'win';
     buttonEl.style.display = 'block';
   }
+  if (numBad >12) {
+    ignoreClicks = true;
+    winEl.innerHTML = 'GAME OVER';
+    buttonEl.style.display = 'block';
+  };
 }
 
 function getShuffledCards() {
@@ -106,6 +111,3 @@ function handleChoice(evt) {
   }
   render();
 }
-// function hideButton() {
-//   this.style.display = 'none';
-// };
