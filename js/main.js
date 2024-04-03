@@ -1,6 +1,6 @@
 /*----- constants -----*/
 const SOURCE_CARDS = [
-  { img: 'https://qph.cf2.quoracdn.net/main-qimg-695738808cf3bc66b089f3584cb7dd4d-lq', matched: false },
+  { img: 'https://www.nicepng.com/png/full/904-9048612_super-girl-clipart-marvel-super-hero-dc-super.png', matched: false },
   { img: 'https://s26162.pcdn.co/wp-content/uploads/2023/02/superman-1240x692.jpeg', matched: false },
   { img: 'https://i0.wp.com/batman-news.com/wp-content/uploads/2022/11/The-Adventures-of-Batman-Blu-ray-Featured-01.jpg?resize=696%2C392&quality=80&strip=info&ssl=1', matched: false },
   { img: 'https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png', matched: false },

@@ -18,16 +18,16 @@ body {
 }
 h1 {
   margin-top: 5vmin;
-  color: grey;
+  color: rgb(183, 140, 20);
   font-size: 5vmin;
 }
 h2{
-  color: grey;
+  color: rgb(183, 140, 20);
   font-size: 2vmin;
   margin: 0;
 }
 h3{
-  color: grey;
+  color: rgb(183, 140, 20);
   font-size: 2vmin;
   margin: 0;
 }
@@ -53,7 +53,12 @@ main>img {
   object-fit: cover;
   /* Maintains aspect ratio, covers the cell */
 }
-
+main>img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.9;
+  cursor: url('/Users/honey/code/project1_memorygame/prepare/cursor1.png'),auto;
+}
 button {
   margin-top: 0vmin;
   /* padding: 2vmin; */
