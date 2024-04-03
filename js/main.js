@@ -24,10 +24,12 @@ let winner;
 /*----- cached elements  -----*/
 const msgEl = document.querySelector('h2');
 const winEl = document.getElementById('win');
+const buttonEl = document.getElementById('play-again');
 
 
 /*----- event listeners -----*/
 document.querySelector('main').addEventListener('click', handleChoice);
+buttonEl.addEventListener('click', init());
 
 /*----- functions -----*/
 init()
@@ -38,6 +40,7 @@ function init() {
   numBad = 0;
   ignoreClicks = false;
   winner = false;
+  buttonEl.style.display = 'none';
   render();
 
 }
@@ -52,6 +55,7 @@ function render() {
   msgEl.innerHTML = `Bad Count: ${numBad}`;
   if (winner) {
     winEl.innerHTML = 'win';
+    buttonEl.style.display = 'block';
   }
 }
 
@@ -102,3 +106,6 @@ function handleChoice(evt) {
   }
   render();
 }
+// function hideButton() {
+//   this.style.display = 'none';
+// };
