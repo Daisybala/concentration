@@ -3,19 +3,17 @@
 }
 
 body {
-  /* viewport units: vh (viewport height), vw, vmin (smallest between vh & vw)
- */
   background-image: url('https://cdn.mos.cms.futurecdn.net/rwow8CCG3C3GrqHGiK8qcJ-970-80.jpg.webp');
   background-size: cover;
   background-position: center;
   height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 h1 {
   margin: 0;
   font-size: 5vmin;
@@ -24,6 +22,7 @@ h1 {
   font-style: normal; 
   text-shadow: 3px 3px 6px white;
 }
+
 h2{
   font-size: 1.5vmin;
   margin: 2vmin 0 0 0;
@@ -32,6 +31,7 @@ h2{
   font-style: normal;
   text-shadow: 0.5px 0.5px 1px white;
 }
+
 h3{
   font-size: 2vmin;
   margin-bottom: 0 0 0.5vmin 0; 
@@ -46,27 +46,22 @@ main {
   grid-template-columns: repeat(4, 18vmin);
   grid-template-rows: repeat(4, 18vmin);
   gap: 0.6vmin;
-  /* margin-top: 1vmin; */
 }
 
 main>img {
   border: 0.1vmin solid grey;
   width: 18vmin;
-  /* Ensure images don't exceed cell width */
   height: 18vmin;
-  /* Ensure images don't exceed cell height */
-  display: block;
-  /* Allows margin auto to center the image */
+  /* display: block; */
   margin: auto;
-  /* Centers the image within the cell */
   object-fit: cover;
-  /* Maintains aspect ratio, covers the cell */
 }
+
 main>img:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
   opacity: 0.9;
-  cursor: url(../prepare/cursor-cactus.png), auto;
+  cursor: url(../images/cursor-cactus.png), auto;
 } 
 button {
   margin-top: 1.5vmin;
