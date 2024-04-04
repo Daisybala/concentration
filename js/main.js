@@ -33,6 +33,8 @@ const audioClEl = document.getElementById('click-player');
 document.querySelector('main').addEventListener('click', handleChoice);
 buttonEl.addEventListener('click', init);
 document.addEventListener('click',playAudio);
+
+
 /*----- functions -----*/
 init()
 
@@ -45,13 +47,11 @@ function init() {
   buttonEl.style.display = 'none';
   winEl.innerHTML = null;
   render();
-
 }
 
 function render() {
   cards.forEach(function(card, idx) {
     const imgEl = document.getElementById(idx);
-    console.log(imgEl);
     const src = (card.matched || card === firstCard || card === secondCard) ? card.img : CARD_BACK;
     imgEl.src = src;
   });
@@ -82,7 +82,6 @@ function getShuffledCards() {
 }
 
 function handleChoice(evt) {
-  // console.log(evt.target.id);
   const cardIdx = parseInt(evt.target.id);
   if (isNaN(cardIdx) || ignoreClicks || cards[cardIdx].matched) return;
   const card = cards[cardIdx];
@@ -93,7 +92,6 @@ function handleChoice(evt) {
         firstCard.matched = secondCard.matched = true;
         firstCard = null;
         secondCard = null;
-        // One way to check for a winner:
         winner = cards.every(card => card.matched);
         render();
       } else {
@@ -116,7 +114,6 @@ function handleChoice(evt) {
 }
 
 function playAudio() {
-  audioBgEl.currentTime = 0;
   audioBgEl.play();
   audioClEl.currentTime = 0;
   audioClEl.play();
