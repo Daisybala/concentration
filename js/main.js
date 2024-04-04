@@ -55,12 +55,12 @@ function render() {
     const src = (card.matched || card === firstCard || card === secondCard) ? card.img : CARD_BACK;
     imgEl.src = src;
   });
-  msgEl.innerHTML = `Bad Count: ${numBad}`;
+  msgEl.innerHTML = `Attempts left: ${12 - numBad}`;
   if (winner) {
     winEl.innerHTML = 'win';
     buttonEl.style.display = 'block';
   }
-  if (numBad >12) {
+  if (numBad >=12) {
     ignoreClicks = true;
     winEl.innerHTML = 'GAME OVER';
     buttonEl.style.display = 'block';
