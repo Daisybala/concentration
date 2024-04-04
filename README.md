@@ -11,7 +11,7 @@ Welcome to the Super Hero Memory Game! This game challenges your memory and conc
 
 # Screenshot
 
-<img src="../project1_memorygame/images/Screenshot 2024-04-04 at 10.56.36 AM.png">
+<img src="../project1_memorygame/images/super hero memory game.png">
 
 # Features
 
@@ -28,7 +28,6 @@ Welcome to the Super Hero Memory Game! This game challenges your memory and conc
 
 # Getting Started
 
-[Click to View Project Planning](your Trello url here)
 [Click to Play Super Hero Memory Game!](https://daisybala.github.io/concentration/)
 
 # Next Steps
