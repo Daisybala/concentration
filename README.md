@@ -1,4 +1,5 @@
 # <Super Hero Memory Game>
+
 Welcome to the Super Hero Memory Game! This game challenges your memory and concentration skills as you match pairs of superhero images.
 
 # Gameplay
@@ -10,8 +11,7 @@ Welcome to the Super Hero Memory Game! This game challenges your memory and conc
 
 # Screenshot
 
-<img src="url to your image on imgur">
-<img src="url to your image on imgur">
+<img src="../project1_memorygame/images/Screenshot 2024-04-04 at 10.56.36 AM.png">
 
 # Features
 

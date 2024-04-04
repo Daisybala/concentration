@@ -22,7 +22,7 @@ h1 {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal; 
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 3px 3px 6px white;
 }
 h2{
   font-size: 1.5vmin;
@@ -77,7 +77,7 @@ button {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: radial-gradient(#009688, #03A9F4);
+  background: radial-gradient(#450350 40%, #6704f3);
   box-shadow: 0 4px 6px white; 
   transition: transform 0.3s, box-shadow 0.3s;
 }
