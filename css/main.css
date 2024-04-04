@@ -18,18 +18,24 @@ body {
 }
 h1 {
   margin: 0;
-  color: rgb(183, 140, 20);
   font-size: 5vmin;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
 }
 h2{
-  color: rgb(183, 140, 20);
   font-size: 2vmin;
   margin: 2vmin;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 h3{
-  color: rgb(183, 140, 20);
   font-size: 2vmin;
   margin: 0;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 main {
@@ -57,20 +63,20 @@ main>img:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
   opacity: 0.9;
-  /* cursor: url(../prepare/cursor1.png), auto; */
-  cursor: pointer;
+  cursor: url(../prepare/cursor-cactus.png), auto;
 } 
 button {
   margin-top: 1.5vmin;
   padding: 1vmin;
   font-size: 2vmin;
   border-radius: 4vmin;
-  border: 0.1vmin solid grey;
-  color: grey;
+  border: none;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background: radial-gradient(#009688, #03A9F4);
 }
 
 button:hover {
-  color: white;
-  background-color: darkgrey;
+  opacity : 0.5;
 }

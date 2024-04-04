@@ -55,7 +55,7 @@ function render() {
     const src = (card.matched || card === firstCard || card === secondCard) ? card.img : CARD_BACK;
     imgEl.src = src;
   });
-  msgEl.innerHTML = `Attempts left: ${12 - numBad}`;
+  msgEl.innerHTML = `Attempts Left: ${12 - numBad}`;
   if (winner) {
     winEl.innerHTML = 'win';
     buttonEl.style.display = 'block';
