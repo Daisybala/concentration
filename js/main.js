@@ -25,12 +25,14 @@ let winner;
 const msgEl = document.querySelector('h2');
 const winEl = document.getElementById('win');
 const buttonEl = document.getElementById('play-again');
+const audioBgEl = document.getElementById('bg-player');
+const audioClEl = document.getElementById('click-player');
 
 
 /*----- event listeners -----*/
 document.querySelector('main').addEventListener('click', handleChoice);
 buttonEl.addEventListener('click', init);
-
+document.addEventListener('click',playAudio);
 /*----- functions -----*/
 init()
 
@@ -41,6 +43,7 @@ function init() {
   ignoreClicks = false;
   winner = false;
   buttonEl.style.display = 'none';
+  winEl.innerHTML = null;
   render();
 
 }
@@ -79,7 +82,7 @@ function getShuffledCards() {
 }
 
 function handleChoice(evt) {
-  console.log(evt.target.id);
+  // console.log(evt.target.id);
   const cardIdx = parseInt(evt.target.id);
   if (isNaN(cardIdx) || ignoreClicks || cards[cardIdx].matched) return;
   const card = cards[cardIdx];
@@ -111,3 +114,11 @@ function handleChoice(evt) {
   }
   render();
 }
+
+function playAudio() {
+  if (ignoreClicks = true) {
+    ignoreClicks = false;
+    audioBgEl.play();
+    audioClEl.play();
+  }  
+};
