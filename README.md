@@ -11,7 +11,7 @@ Welcome to the Super Hero Memory Game! This game challenges your memory and conc
 
 # Screenshot
 
-<img src="images/super hero memory game.png“>
+<img src="images/super hero memory game.png">
 
 # Features
 
