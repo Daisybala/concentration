@@ -15,10 +15,10 @@ Welcome to the Super Hero Memory Game! This game challenges your memory and conc
 
 # Features
 
--Dynamic grid layout for the game board.
--Interactive hover effect on cards.
--Background music and click sound effects.
--Play again button for restarting the game.
+- Dynamic grid layout for the game board.
+- Interactive hover effect on cards.
+- Background music and click sound effects.
+- Play again button for restarting the game.
 
 # Technologies Used
 
@@ -33,6 +33,6 @@ Welcome to the Super Hero Memory Game! This game challenges your memory and conc
 
 # Next Steps
 
--Add a timer to track the time taken to complete the game.
--Implement a scoring system based on the number of moves made.
--Add more levels to the game. After completing one level (e.g., easy), the player will progress to the next level (e.g., medium) with a new set of cards.
+- Add a timer to track the time taken to complete the game.
+- Implement a scoring system based on the number of moves made.
+- Add more levels to the game. After completing one level (e.g., easy),the player will progress to the next level (e.g., medium) with a new set of cards.
