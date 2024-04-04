@@ -116,9 +116,8 @@ function handleChoice(evt) {
 }
 
 function playAudio() {
-  if (ignoreClicks = true) {
-    ignoreClicks = false;
-    audioBgEl.play();
-    audioClEl.play();
-  }  
+  audioBgEl.currentTime = 0;
+  audioBgEl.play();
+  audioClEl.currentTime = 0;
+  audioClEl.play();
 };
