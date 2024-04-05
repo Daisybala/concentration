@@ -52,7 +52,6 @@ main>img {
   border: 0.1vmin solid grey;
   width: 18vmin;
   height: 18vmin;
-  /* display: block; */
   margin: auto;
   object-fit: cover;
 }
