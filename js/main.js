@@ -46,8 +46,6 @@ function init() {
   winner = false;
   buttonEl.style.display = 'none';
   winEl.innerHTML = null;
-  audioBgEl.pause();
-  audioBgEl.currentTime = 0;
   render();
 }
 
