@@ -11,7 +11,7 @@ Welcome to the Super Hero Memory Game! Challenge your memory and concentration s
 
 ## Screenshot
 
-![Game start](images/super_hero_memory_game.png)
+![Game start](images/super%20hero%20memory%20game.png)
 ![Game end](images/gameend.png)
 
 ## Features
